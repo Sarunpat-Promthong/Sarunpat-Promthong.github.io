@@ -3,6 +3,9 @@
 /* Minimal, modern: white space does the work. Near-black ink, cool greys,
    one teal accent taken from the Hipsbook brand, mono labels for metadata. */
 :root {
+  --nf-display: "Manrope Variable";
+  --nf-mono: "IBM Plex Mono";
+  --nf-thai: "IBM Plex Sans Thai";
   --paper: #ffffff;
   --paper-2: #f6f7f8;
   --ink: #0f1214;

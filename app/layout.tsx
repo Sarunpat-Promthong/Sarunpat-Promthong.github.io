@@ -1,24 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Manrope, IBM_Plex_Mono, IBM_Plex_Sans_Thai } from "next/font/google";
+// Fonts are bundled from npm (Fontsource), so the build never needs to reach Google Fonts.
+import "@fontsource-variable/manrope";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/500.css";
+import "@fontsource/ibm-plex-sans-thai/400.css";
+import "@fontsource/ibm-plex-sans-thai/500.css";
 import "./globals.css";
-
-const display = Manrope({
-  variable: "--nf-display",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const mono = IBM_Plex_Mono({
-  variable: "--nf-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
-});
-
-const thai = IBM_Plex_Sans_Thai({
-  variable: "--nf-thai",
-  subsets: ["thai"],
-  weight: ["400", "500"],
-});
 
 export const metadata: Metadata = {
   title: "Sarunpat Promthong · Software developer",
@@ -40,7 +27,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${mono.variable} ${thai.variable}`}>
+    <html lang="en">
       <body>{children}</body>
     </html>
   );
