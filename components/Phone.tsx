@@ -11,7 +11,7 @@ type Props = {
   priority?: boolean;
 };
 
-// A screenshot in a thin device frame. Screenshots are 540×1092 (iPhone with the status bar cropped off).
+// A screenshot in a thin device frame. Screenshots are full iPhone screens at 540×1174.
 export function Phone({ src, alt, className = "", priority = false }: Props) {
   return (
     <div
@@ -21,9 +21,9 @@ export function Phone({ src, alt, className = "", priority = false }: Props) {
         src={asset(src)}
         alt={alt}
         width={540}
-        height={1092}
+        height={1174}
         loading="eager"
-        className="block aspect-[540/1092] w-full rounded-[1.65rem] object-cover"
+        className="block aspect-[540/1174] w-full rounded-[1.65rem] object-cover"
       />
     </div>
   );

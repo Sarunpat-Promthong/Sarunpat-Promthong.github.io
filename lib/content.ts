@@ -37,7 +37,7 @@ export const flow: Step[] = [
     img: "shots/course-paid.webp",
     title: "Buy",
     detail: "Buy the whole course from its detail page, or single lessons from the lesson list. Both hand off to the payment API.",
-    alt: "Guitar course detail screen with a ฿990 price and a Buy course button",
+    alt: "Speed Picking guitar course detail screen with a ฿1,490 price and a Buy course button",
   },
 ];
 
@@ -55,12 +55,12 @@ export const hipsbook = {
   ],
   stack: ["Next.js", "React Native", "TypeScript", "React", "Tailwind CSS", "REST APIs"],
   gallery: [
+    { img: "shots/signup-2.webp", caption: "Sign-up form: password rules and terms before the account is created", alt: "Bottom of the Hipsbook sign-up form with password rules, confirm password, a terms checkbox and a disabled sign-up button" },
     { img: "shots/signin.webp", caption: "Sign in with email or Google, X, LINE and Apple", alt: "Hipsbook sign-in screen with email, password and social login buttons" },
     { img: "shots/forgot.webp", caption: "Forgot password: reset by email", alt: "Hipsbook forgot-password screen with an email field and a reset button" },
     { img: "shots/catalog.webp", caption: "Course catalog with search and filters", alt: "Hipsbook list of all courses with search bar" },
-    { img: "shots/lessons-paid.webp", caption: "Buy single lessons: each locked lesson has its own price", alt: "Lesson list where each locked lesson shows its own buy button, ฿47 and ฿39" },
-    { img: "shots/documents.webp", caption: "Paid sheet music and audio attached to lessons", alt: "Lesson documents list with PDF purchase buttons and an audio track" },
-    { img: "shots/player.webp", caption: "Lesson player with All, Unlocked and Buy more tabs", alt: "Hipsbook video lesson player above a list of guitar lessons" },
+    { img: "shots/lessons-paid.webp", caption: "Buy single lessons: each locked lesson has its own price", alt: "Lesson list where each locked lesson shows its own buy button, ฿23 and ฿20" },
+    { img: "shots/player.webp", caption: "Lesson player with All, Unlocked and Buy more tabs", alt: "Hipsbook video lesson player above a list of saxophone lessons, one unlocked and one with a ฿20 buy button" },
     { img: "shots/live.webp", caption: "Live classes: now live, recommended, following", alt: "Hipsbook live page with search, filter chips and an empty state" },
     { img: "shots/go-live.webp", caption: "Go-live setup: camera check, cover, title, audience", alt: "Hipsbook start-live form with camera preview, cover upload, title, description and visibility options" },
   ],
