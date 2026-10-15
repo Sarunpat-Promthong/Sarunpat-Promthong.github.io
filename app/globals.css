@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Minimal, modern: white space does the work. Near-black ink, cool greys,
+   one teal accent taken from the Hipsbook brand, mono labels for metadata. */
+:root {
+  --paper: #ffffff;
+  --paper-2: #f6f7f8;
+  --ink: #0f1214;
+  --ink-soft: #5d6670;
+  --ink-faint: #8a939c;
+  --pine: #0b7f7a;
+  --pine-soft: #d9f3f1;
+  --line: #e7eaed;
+  --ok: #16a34a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0b0d0f;
+    --paper-2: #131619;
+    --ink: #eef1f3;
+    --ink-soft: #a0a9b2;
+    --ink-faint: #6c757e;
+    --pine: #3cc7bf;
+    --pine-soft: #0f3532;
+    --line: #22272c;
+    --ok: #4ade80;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-pine: var(--pine);
+  --color-pine-soft: var(--pine-soft);
+  --color-line: var(--line);
+  --color-ok: var(--ok);
+  --font-display: var(--nf-display), var(--nf-thai), system-ui, sans-serif;
+  --font-body: var(--nf-display), var(--nf-thai), system-ui, sans-serif;
+  --font-mono: var(--nf-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--nf-display), var(--nf-thai), system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* One orchestrated moment: the hero phones settle into their fan. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+.rise {
+  animation: rise 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rise { animation: none; }
+}
