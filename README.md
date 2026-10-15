@@ -8,7 +8,7 @@ Live: https://sarunpat-promthong.github.io
 
 - Case study of the sign-up → OTP → browse → buy flow I built for [Hipsbook](https://www.hipsbook.com)
 - Static export (`output: "export"`), no server needed
-- Light and dark themes, keyboard focus styles, respects reduced-motion
+- Light theme, keyboard focus styles, respects reduced-motion
 - All copy lives in `lib/content.ts`, separate from layout code
 
 ## Run locally

@@ -1,39 +1,26 @@
 @import "tailwindcss";
 
-/* Minimal, modern: white space does the work. Ink with a cool blue cast,
-   one cobalt accent, a soft peach glow for warmth, mono labels for metadata.
-   (Token "pine" is the accent; the name is historical.) */
+/* Minimal, modern: white space does the work. Ink with a green cast,
+   one emerald accent that sits next to the teal app screenshots,
+   a faint blue glow for depth, small uppercase labels for metadata.
+   (Token "pine" is the accent.) */
 :root {
-  --nf-display: "Manrope Variable";
-  --nf-mono: "IBM Plex Mono";
+  --nf-display: "Inter Variable";
+  --nf-mono: "Inter Variable";
   --nf-thai: "IBM Plex Sans Thai";
   --paper: #ffffff;
-  --paper-2: #f5f7fc;
-  --ink: #0b1020;
-  --ink-soft: #4b5468;
-  --ink-faint: #8a92a6;
-  --pine: #2f4ff0;
-  --pine-soft: #dfe5ff;
-  --glow: #ffe3d6;
-  --line: #e5e8f0;
+  --paper-2: #f3f7f5;
+  --ink: #0d1714;
+  --ink-soft: #4a5a55;
+  --ink-faint: #86948f;
+  --pine: #059669;
+  --pine-soft: #d5f3e6;
+  --glow: #e7f0ff;
+  --line: #e2ebe7;
   --ok: #16a34a;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0a0c14;
-    --paper-2: #11141f;
-    --ink: #eef0f7;
-    --ink-soft: #a3aac0;
-    --ink-faint: #6b7389;
-    --pine: #8ea2ff;
-    --pine-soft: #1b2350;
-    --glow: #3a2030;
-    --line: #1f2433;
-    --ok: #4ade80;
-    color-scheme: dark;
-  }
-}
 
 @theme inline {
   --color-paper: var(--paper);
@@ -48,7 +35,7 @@
   --color-ok: var(--ok);
   --font-display: var(--nf-display), var(--nf-thai), system-ui, sans-serif;
   --font-body: var(--nf-display), var(--nf-thai), system-ui, sans-serif;
-  --font-mono: var(--nf-mono), ui-monospace, monospace;
+  --font-mono: var(--nf-mono), var(--nf-thai), system-ui, sans-serif;
 }
 
 html {
@@ -63,6 +50,7 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  font-feature-settings: "cv11", "ss01";
 }
 
 h1, h2, h3 {

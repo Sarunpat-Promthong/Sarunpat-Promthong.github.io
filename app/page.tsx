@@ -6,7 +6,7 @@ const wrap = "mx-auto w-full max-w-6xl px-5 sm:px-8";
 
 function Label({ children }: { children: React.ReactNode }) {
   return (
-    <p className="font-mono text-xs font-medium uppercase tracking-[0.14em] text-ink-faint">{children}</p>
+    <p className="font-mono text-xs font-semibold uppercase tracking-[0.08em] text-ink-faint">{children}</p>
   );
 }
 
@@ -32,7 +32,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 border-b border-line/70 bg-paper/75 backdrop-blur-xl">
         <div className={`${wrap} flex h-16 items-center justify-between gap-4`}>
           <a href="#top" className="flex items-center gap-2.5 font-semibold tracking-tight">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-pine text-xs font-bold text-white dark:text-paper">
+            <span className="grid h-8 w-8 place-items-center rounded-lg bg-pine text-xs font-bold text-white">
               SP
             </span>
             <span className="hidden sm:inline">Sarunpat Promthong</span>
@@ -84,15 +84,15 @@ export default function Home() {
 
             <dl className="mt-12 grid max-w-lg grid-cols-[auto_auto_auto] gap-6 border-t border-line pt-6">
               <div>
-                <dt className="font-mono text-[0.7rem] uppercase tracking-[0.14em] text-ink-faint">Experience</dt>
+                <dt className="font-mono text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-ink-faint">Experience</dt>
                 <dd className="mt-1 font-semibold">2 years</dd>
               </div>
               <div>
-                <dt className="font-mono text-[0.7rem] uppercase tracking-[0.14em] text-ink-faint">Builds</dt>
+                <dt className="font-mono text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-ink-faint">Builds</dt>
                 <dd className="mt-1 font-semibold">Web · Mobile · API</dd>
               </div>
               <div>
-                <dt className="font-mono text-[0.7rem] uppercase tracking-[0.14em] text-ink-faint">Based in</dt>
+                <dt className="font-mono text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-ink-faint">Based in</dt>
                 <dd className="mt-1 font-semibold">Thailand</dd>
               </div>
             </dl>
@@ -228,7 +228,7 @@ export default function Home() {
                       ))}
                     </ul>
                   </div>
-                  <p className="font-mono text-xs uppercase tracking-[0.12em] text-ink-faint sm:pt-1.5 sm:text-right">
+                  <p className="font-mono text-xs uppercase tracking-[0.08em] text-ink-faint sm:pt-1.5 sm:text-right">
                     {p.period}
                     <br className="hidden sm:block" />
                     <span className="sm:hidden"> · </span>
