@@ -32,7 +32,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 border-b border-line/70 bg-paper/75 backdrop-blur-xl">
         <div className={`${wrap} flex h-16 items-center justify-between gap-4`}>
           <a href="#top" className="flex items-center gap-2.5 font-semibold tracking-tight">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-ink text-xs font-bold text-paper">
+            <span className="grid h-8 w-8 place-items-center rounded-lg bg-pine text-xs font-bold text-white dark:text-paper">
               SP
             </span>
             <span className="hidden sm:inline">Sarunpat Promthong</span>
@@ -100,7 +100,8 @@ export default function Home() {
 
           {/* Fan of three real screens */}
           <div className="relative mx-auto aspect-[10/8.6] w-full max-w-[540px]" aria-label="Hipsbook screens">
-            <div aria-hidden className="absolute inset-x-[10%] inset-y-[12%] rounded-full bg-pine-soft blur-3xl" />
+            <div aria-hidden className="absolute left-[4%] top-[8%] h-[70%] w-[62%] rounded-full bg-pine-soft blur-3xl" />
+            <div aria-hidden className="absolute bottom-[4%] right-[2%] h-[55%] w-[52%] rounded-full bg-glow blur-3xl" />
             <Phone
               src={first.img}
               alt={first.alt}

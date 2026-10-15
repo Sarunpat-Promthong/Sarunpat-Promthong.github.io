@@ -1,32 +1,35 @@
 @import "tailwindcss";
 
-/* Minimal, modern: white space does the work. Near-black ink, cool greys,
-   one teal accent taken from the Hipsbook brand, mono labels for metadata. */
+/* Minimal, modern: white space does the work. Ink with a cool blue cast,
+   one cobalt accent, a soft peach glow for warmth, mono labels for metadata.
+   (Token "pine" is the accent; the name is historical.) */
 :root {
   --nf-display: "Manrope Variable";
   --nf-mono: "IBM Plex Mono";
   --nf-thai: "IBM Plex Sans Thai";
   --paper: #ffffff;
-  --paper-2: #f6f7f8;
-  --ink: #0f1214;
-  --ink-soft: #5d6670;
-  --ink-faint: #8a939c;
-  --pine: #0b7f7a;
-  --pine-soft: #d9f3f1;
-  --line: #e7eaed;
+  --paper-2: #f5f7fc;
+  --ink: #0b1020;
+  --ink-soft: #4b5468;
+  --ink-faint: #8a92a6;
+  --pine: #2f4ff0;
+  --pine-soft: #dfe5ff;
+  --glow: #ffe3d6;
+  --line: #e5e8f0;
   --ok: #16a34a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #0b0d0f;
-    --paper-2: #131619;
-    --ink: #eef1f3;
-    --ink-soft: #a0a9b2;
-    --ink-faint: #6c757e;
-    --pine: #3cc7bf;
-    --pine-soft: #0f3532;
-    --line: #22272c;
+    --paper: #0a0c14;
+    --paper-2: #11141f;
+    --ink: #eef0f7;
+    --ink-soft: #a3aac0;
+    --ink-faint: #6b7389;
+    --pine: #8ea2ff;
+    --pine-soft: #1b2350;
+    --glow: #3a2030;
+    --line: #1f2433;
     --ok: #4ade80;
     color-scheme: dark;
   }
@@ -40,6 +43,7 @@
   --color-ink-faint: var(--ink-faint);
   --color-pine: var(--pine);
   --color-pine-soft: var(--pine-soft);
+  --color-glow: var(--glow);
   --color-line: var(--line);
   --color-ok: var(--ok);
   --font-display: var(--nf-display), var(--nf-thai), system-ui, sans-serif;
